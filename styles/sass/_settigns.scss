@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../../assets/fonts/MerriweatherSans-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "extrabold";
+  src: url(../../assets/fonts/MerriweatherSans-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "font-2";
+  src: url(../../assets/fonts/Merriweather-Regular.ttf);
+}
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin font1 {
+  font-family: "font-1", sans-serif;
+}
+@mixin font2 {
+  font-family: "font-2", sans-serif;
+}
+@mixin italic {
+  font-style: italic;
+}
+@mixin grid($col1, $col2) {
+  display: grid;
+  grid-template-columns: $col1 $col2;
+}
+@mixin btn {
+  background: none;
+  width: 130px;
+  height: 40px;
+  text-transform: uppercase;
+  @include font1;
+  font-size: 0.75rem;
+}
+$color1:white;
+$color2:#212931;
+$color-end:#798088;
+$bg-color-end:#f5f5f5;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+body {
+  background: url(../../assets/img/bg.jpg) center/cover fixed;
+  @include font1;
+}
+a{
+  text-decoration: none;
+  color: $color1;
+}

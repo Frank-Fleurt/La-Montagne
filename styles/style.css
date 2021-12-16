@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../../assets/fonts/MerriweatherSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "extrabold";
+  src: url(../../assets/fonts/MerriweatherSans-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "font-2";
+  src: url(../../assets/fonts/Merriweather-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: url(../../assets/img/bg.jpg) center/cover fixed;
+  font-family: "font-1", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  height: 75vh;
+  color: white;
+  padding-top: 195px;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    height: 100vh;
+  }
+}
+
+header .top-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+header .top-header div {
+  width: 80%;
+  text-align: center;
+}
+
+header .top-header div h1 {
+  font-family: "extrabold", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  padding: 0 0 15px;
+}
+
+@media screen and (min-width: 600px) {
+  header .top-header div h1 {
+    font-size: 3em;
+    padding: 0 0 25px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  header .top-header div h1 {
+    font-size: 5em;
+    padding: 0 0 35px;
+  }
+}
+
+header .top-header div span {
+  font-size: 0.75rem;
+}
+
+@media screen and (min-width: 600px) {
+  header .top-header div span {
+    margin-top: 3500px;
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  header .top-header div span {
+    font-size: 1.5em;
+  }
+}
+
+header .top-header div div {
+  display: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media screen and (min-width: 600px) {
+  header .top-header div div {
+    width: 50px;
+    height: 50px;
+    font-size: 0.75rem;
+    margin: 25px auto;
+    border: 1px solid white;
+    border-radius: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  header .top-header div div {
+    width: 70px;
+    height: 70px;
+    margin: 45px auto;
+    border: 2px solid white;
+    border-radius: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+header .top-header div div:hover {
+  background: lightgray;
+  cursor: pointer;
+}
+
+header nav {
+  background: rgba(190, 190, 190, 0.205);
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
+}
+
+header nav a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header nav a:hover {
+  background: lightgray;
+}
+
+@media screen and (min-width: 600px) {
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+header nav .nav-left {
+  font-family: "extrabold";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 600px) {
+  header nav .nav-left {
+    font-size: 0.65rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  header nav .nav-left {
+    font-size: 0.8rem;
+  }
+}
+
+header nav .nav-left a {
+  height: 60px;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .nav-left .actual {
+  background: white;
+}
+
+header nav .nav-left .actual li {
+  color: black;
+  text-align: center;
+}
+
+header nav .nav-right {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 20%;
+}
+
+header nav .nav-right img {
+  width: 20px;
+}
+/*# sourceMappingURL=style.css.map */
