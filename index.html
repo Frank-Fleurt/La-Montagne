@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>La Montagne</title>
@@ -8,94 +9,126 @@
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
 </head>
+
 <body>
-    <header>
-      <div class="top-header">
+  <header>
+    <div class="top-header">
+      <div>
+        <h1>La Montagne <br> ça vous gagne</h1>
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aut dicta cupiditate sit nulla
+          laboriosam?
+        </span>
         <div>
-          <h1>La Montagne <br> ça vous gagne</h1>
-          <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aut dicta cupiditate sit nulla laboriosam?
-          </span>
-          <div>
-           <a href="#"><img src="./assets/icons/arrow-down-solid.svg" alt=""></a>
-          </div>
+          <a href="#"><img src="./assets/icons/arrow-down-solid.svg" alt=""></a>
         </div>
       </div>
-      <nav>
-          <ul class="nav-left">
-              <a href="#section1" class="actual"><li>This is Massively</li></a>
-              <a href="#"><li>Generic page</li></a>
-              <a href="#"><li>Elements Reference</li></a>         
-          </ul>
-          <ul class="nav-right">
-          <a href=""><li><img src="./assets/icons/twitter.svg" alt="Logo twitter"></li></a>
-          <a href=""><li><img src="./assets/icons/facebook.svg" alt="Logo facebook"></li></a>
-          <a href=""><li><img src="./assets/icons/instagram.svg" alt="Logo instagram"></li></a>
-          <a href=""><li><img src="./assets/icons/github.svg" alt="Logo github"></li></a>
-          </ul>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <div class="section1" id="section1">
+    </div>
+    <nav>
+      <ul class="nav-left">
+        <a href="#section1" class="actual">
+          <li>This is Massively</li>
+        </a>
+        <a href="#">
+          <li>Generic page</li>
+        </a>
+        <a href="#">
+          <li>Elements Reference</li>
+        </a>
+      </ul>
+      <ul class="nav-right">
+        <a href="">
+          <li><img src="./assets/icons/twitter.svg" alt="Logo twitter"></li>
+        </a>
+        <a href="">
+          <li><img src="./assets/icons/facebook.svg" alt="Logo facebook"></li>
+        </a>
+        <a href="">
+          <li><img src="./assets/icons/instagram.svg" alt="Logo instagram"></li>
+        </a>
+        <a href="">
+          <li><img src="./assets/icons/github.svg" alt="Logo github"></li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <div class="section-container" id="section1">
+        <div class="date">
           <span>April 25, 2017</span>
-          <h2>And This is a Massive Headline</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore recusandae corporis ex voluptatibus tenetur consequatur, obcaecati, doloremque reprehenderit et quasi, veritatis atque deleniti quia.</p>
-          <div class="img"></div>
+        </div>
+        <h2>And This is a Massive Headline</h2>
+        <p class="first-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore recusandae corporis ex voluptatibus tenetur
+          consequatur, obcaecati, doloremque reprehenderit et quasi, veritatis atque deleniti quia.</p>
+        <div class="img">
           <img src="./assets/img/pic01.jpg" alt="Image of montain in desert">
-          <button class="btn">Full Story</button>
         </div>
-        <div class="section2">
-          <div class="left-sec-2">
-            <span>April 25, 2017</span>
-            <h4>Sed Magna Ipsum Faucibus</h4>
-            <div class="img"></div>
-            <img src="./assets/img/pic02.jpg" alt="Image of a wooden montain">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, hic! Quisquam suscipit, aperiam dolore iusto nam earum fuga tenetur animi consectetur illo ducimus.</p>
-          <button class="btn">Full Story</button>
-        </div>
-          <div class="right-sec-2">
-            <span>April 25, 2017</span>
-            <h4>Primis Eget Imperdiet Lorem</h4>
-            <div class="img"></div>
-            <img src="./assets/img/pic03.jpg" alt="Image of a natural cliff">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, hic! Quisquam suscipit, aperiam dolore iusto nam earum fuga tenetur animi consectetur illo ducimus.</p>
-            <button class="btn">Full Story</button>
+        <button class="btn first-btn">Full Story</button>
+      </div>
+      <div class="section-flex">
+        <div class="section-container  border-top left-section">
+          <div>
+            <span>April 24, 2017</span>
           </div>
+          <h3>Sed Magna Ipsum Faucibus</h3>
+          <div class="img">
+            <img src="./assets/img/pic02.jpg" alt="Image of a wooden montain">
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, hic! Quisquam suscipit, aperiam dolore
+            iusto nam earum fuga tenetur animi consectetur illo ducimus.</p>
+          <button class="btn">Full Story</button>
         </div>
-      </section>
-    </main>
-    <footer>
-      <div class="left-footer">
-        <form action="">
-          <input type="text" id="name">
-          <label for="name">Name</label>
-          <input type="text" id="mail">
-          <label for="mail">Email</label>
-          <textarea name="Message" id="message" cols="30" rows="10"></textarea>
-          <label for="message">Message</label>
-          <input type="submit" value="Send message" class="btn">
-        </form>
+        <div class="section-container border-top">
+          <div>
+            <span>April 23, 2017</span>
+          </div>
+          <h3>Primis Eget Imperdiet Lorem</h3>
+          <div class="img">
+            <img src="./assets/img/pic03.jpg" alt="Image of a natural cliff">
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, hic! Quisquam suscipit, aperiam dolore
+            iusto nam earum fuga tenetur animi consectetur illo ducimus.</p>
+          <button class="btn">Full Story</button>
+        </div>
       </div>
-      <div class="right-footer">
-        <div class="first">
-          <h5>Adress</h5>
-          <span>1234 Smewere in this marveillous land</span>
-        </div>
-        <div class="second">
-          <h5>Phone</h5>
-          <span>(000)000-0000</span>
-        </div>
-        <div class="third">
-          <h5>Email</h5>
-          <span>info@untitled.tld</span>
-        </div>
+    </section>
+  </main>
+  <footer>
+    <div class="left-footer">
+      <form action="">
+        <label for="name">Name</label>
+        <input type="text" id="name">
+        <label for="mail">Email</label>
+        <input type="text" id="mail">
+        <label for="message">Message</label>
+        <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+        <input type="submit" value="Send message" class="btn">
+      </form>
+    </div>
+    <div class="right-footer">
+      <div class="right-footer-container">
+        <h5>Adress</h5>
+        <span>1234 Somewhere Road #87257 <br> Nashville, TN 00000-0000</span>
+      </div>
+      <div class="right-footer-container">
+        <h5>Phone</h5>
+        <span>(000)000-0000</span>
+      </div>
+      <div class="right-footer-container">
+        <h5>Email</h5>
+        <span>info@untitled.tld</span>
+      </div>
+      <div class="right-footer-container">
+        <h5>Social</h5>
         <div class="social">
-          <div><img src="./assets/icons/twitter.svg" alt="Logo twitter"></div>
-          <div><img src="./assets/icons/facebook.svg" alt="Logo facebook"></div>
-          <div><img src="./assets/icons/instagram.svg" alt="Logo instagram"></div>
-          <div><img src="./assets/icons/github.svg" alt="Logo github"></div>
+          <div><img src="./assets/icons/gtwitter.svg" alt="Logo twitter"></div>
+          <div><img src="./assets/icons/gfacebook.svg" alt="Logo facebook"></div>
+          <div><img src="./assets/icons/ginstagram.svg" alt="Logo instagram"></div>
+          <div><img src="./assets/icons/ggithub.svg" alt="Logo github"></div>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 </body>
+
 </html>

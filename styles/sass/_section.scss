@@ -1,0 +1,104 @@
+section{
+  background: white;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  .border-top{
+    border-top: lightgray 1px solid;
+  }
+  .section-container{
+    padding: 50px 0;
+    .date{
+      width: 30%;
+      margin: 60px auto;
+      position: relative;
+      &::before{
+        content:"";
+        position:absolute;
+        z-index: 1;
+        height: 100%;
+        width: 90%;
+        border-top: 1px solid lightgray;
+        top: 50%;
+        right: -100%;
+      }
+      &::after{
+        content:"";
+        position:absolute;
+        height: 100%;
+        width: 90%;
+        border-top: 1px solid lightgray;
+        top: 50%;
+        left: -100%;
+      }
+    }
+    .first-p{
+      @media screen and (min-width:600px) {
+        width: 50%;
+      }
+    }
+    h2{
+      font-size: 2rem;
+      text-transform: uppercase;
+      width: 90%;
+      margin: 0 auto;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding:  0 0 25px ;
+    }
+    p{
+      width: 85%;
+      margin: 0 auto;
+      padding: 20px 0 35px;
+      font-size: 0.85rem;
+      line-height: 30px;
+      font-family:$font1;
+      @include italic;
+      font-weight: 100;
+      color: gray;
+    }
+    .img{
+      width: 70%;
+      margin:0 auto;
+      overflow: hidden;
+      @media screen and (min-width:600px) {
+        width: 85%;
+      }
+      img{
+        width: 100%;
+        transition: 0.2s;
+        &:hover{
+          transform: scale(1.1);
+          cursor: pointer;
+        }
+      }
+    }
+    h3{
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      width: 90%;
+      margin: 20px auto 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding:  0 0 25px ;
+    }
+    span{
+      font-family: $font2;
+      font-size: 0.75rem;
+    }
+    .first-btn{
+      margin-top: 25px;
+    }
+  }
+  .section-flex{
+    @media screen and (min-width:600px) {
+       @include grid (50%,50%);
+    }
+  }
+  .left-section{
+    h3{
+      font-size: 1.584rem;
+    }
+    @media screen and (min-width:600px) {
+      border-right: 1px solid lightgray;
+    }
+  }
+}
