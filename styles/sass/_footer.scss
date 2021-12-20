@@ -1,5 +1,5 @@
 footer{
-  @media screen and (min-width:600px) {
+  @media screen and (min-width:576px) {
     @include grid (50%,50%);
   }
   width: 90%;
@@ -7,7 +7,7 @@ footer{
   background: white;
   margin: 35px auto;
   .left-footer{
-    @media screen and (min-width:600px) {
+    @media screen and (min-width:576px) {
       border-right: 1px solid lightgray;
       padding: 45px;
     }

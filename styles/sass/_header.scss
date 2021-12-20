@@ -1,5 +1,5 @@
 header {
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 576px) {
     height: 100vh;
   }
   position: relative;
@@ -14,13 +14,13 @@ header {
       width: 80%;
       text-align: center;
       h1 {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 700;
         text-transform: uppercase;
         font-size: 2rem;
         letter-spacing: 5px;
         padding: 0 0 15px;
-        @media screen and (min-width: 600px) {
+        @media screen and (min-width: 576px) {
           font-size: 3em;
           padding: 0 0 25px;
         }
@@ -31,19 +31,19 @@ header {
       }
       span {
         font-size: 0.75rem;
-        @media screen and (min-width: 600px) {
+        @media screen and (min-width: 576px) {
           font-size: 1em;
         }
         @media screen and (min-width: 900px) {
           font-size: 1.5em;
         }
         @include italic;
-        font-family:$font2;
+        font-family: $font2;
       }
       div {
         display: none;
         transition: 0.5s;
-        @media screen and (min-width: 600px) {
+        @media screen and (min-width: 576px) {
           width: 50px;
           height: 50px;
           font-size: 0.75rem;
@@ -67,59 +67,121 @@ header {
       }
     }
   }
-  nav {
-    background: rgba(190, 190, 190, 0.205);
-    width: 90%;
+  .nav {
     position: absolute;
-    left: 50%;
-    bottom: 0px;
-    transform: translateX(-50%);
-    display: none;
-    @media screen and (min-width: 600px) {
+    top: 0;
+    right: 0;
+    width: 150px;
+    display: flex;
+    justify-content: flex-end;
+    @media screen and (min-width: 576px) {
       display: flex;
+      background: rgba(190, 190, 190, 0.205);
       justify-content: space-between;
       align-items: center;
-      
+      left: 50%;
+      top: 100%;
+      width: 90%;
+      height: 60px;
+      transform: translateX(-50%) translateY(-100%);
     }
     .nav-left {
       font-family: "extrabold";
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 50%;
       text-transform: uppercase;
-      @media screen and (min-width : 600px) {
+      width: 100%;
+      height: 100%;
+      @media screen and (min-width: 576px) {
+        width: 80%;
         font-size: 0.65rem;
       }
-      @media screen and (min-width:900px) {
+      @media screen and (min-width: 900px) {
         font-size: 0.8rem;
       }
-      a{
-        height: 60px;
-        width: 30%;
-        @include center;
-        transition: 0.5s;
-        &:hover{
-          background: lightgray;
-          color: rgb(0, 81, 255);
-        }
-      }
-      .actual {
-        background: rgb(255, 255, 255);
-        li {
-          color: black;
-          text-align: center;
+      .navbar {
+        width: 100%;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        height: 100%;
+        .container-fluid {
+          padding: 0 !important;
+          justify-content: flex-end;
+          button {
+            display: flex;
+            align-items: center;
+            border: none;
+            transition: 0.5s;
+            @media screen and (min-width: 576px) {
+              display: none;
+            }
+            &:hover {
+              background: lightgray;
+              transform: scale(1.1);
+            }
+            &:visited {
+              background: lightgray;
+            }
+            span {
+              padding: 5px !important;
+            }
+            .navbar-toggler-icon {
+              border: none !important;
+              font-size: 0.75rem;
+              &:hover {
+                border: none !important;
+              }
+            }
+            .navbar-brand {
+              font-size: 0.75rem;
+              &:hover {
+                background: none;
+              }
+              @media screen and (min-width: 576px) {
+                visibility: hidden;
+                height: 0;
+                width: 0;
+                margin: 0;
+                padding: 0;
+              }
+            }
+          }
+          .show {
+            background: lightgray;
+            border-radius:5px ;
+          }
+          a {
+            height: 60px;
+            @include center;
+            transition: 0.5s;
+            &:hover {
+              background: lightgray;
+            }
+          }
+          .actual {
+            @media screen and (min-width: 576px) {
+              background: rgb(255, 255, 255) !important;
+              color: black !important;
+            }
+          }
         }
       }
     }
     .nav-right {
-      padding: 18px;
+      @media screen and (max-width: 576px) {
+        visibility: hidden;
+        height: 0;
+        padding: 0;
+      }
+      margin: 0;
+      padding: 16px;
       display: flex;
       justify-content: space-between;
       width: 20%;
-      img{
+      img {
         width: 20px;
-        &:hover{
+        &:hover {
           transform: scale(1.1);
         }
       }

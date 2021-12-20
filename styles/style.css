@@ -147,7 +147,7 @@ a {
   color: white;
 }
 
-.btn {
+.button {
   background: none;
   border: 1px solid #2b2b2b;
   padding: 10px 20px;
@@ -156,7 +156,7 @@ a {
   font-weight: bolder;
 }
 
-.btn:hover {
+.button:hover {
   background: #e6e6e6;
   cursor: pointer;
   font-size: 0.8rem;
@@ -164,7 +164,7 @@ a {
 }
 
 @media screen and (min-width: 900px) {
-  .btn {
+  .button {
     padding: 10px 30px;
   }
 }
@@ -176,7 +176,7 @@ header {
   padding-top: 22vh;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   header {
     height: 100vh;
   }
@@ -203,7 +203,7 @@ header .top-header div {
 }
 
 header .top-header div h1 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 2rem;
@@ -211,7 +211,7 @@ header .top-header div h1 {
   padding: 0 0 15px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   header .top-header div h1 {
     font-size: 3em;
     padding: 0 0 25px;
@@ -231,7 +231,7 @@ header .top-header div span {
   font-family: "font-2", sans-serif;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   header .top-header div span {
     font-size: 1em;
   }
@@ -249,7 +249,7 @@ header .top-header div div {
   transition: 0.5s;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   header .top-header div div {
     width: 50px;
     height: 50px;
@@ -293,32 +293,41 @@ header .top-header div div:hover {
   cursor: pointer;
 }
 
-header nav {
-  background: rgba(190, 190, 190, 0.205);
-  width: 90%;
+header .nav {
   position: absolute;
-  left: 50%;
-  bottom: 0px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  display: none;
+  top: 0;
+  right: 0;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-@media screen and (min-width: 600px) {
-  header nav {
+@media screen and (min-width: 576px) {
+  header .nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    background: rgba(190, 190, 190, 0.205);
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    left: 50%;
+    top: 100%;
+    width: 90%;
+    height: 60px;
+    -webkit-transform: translateX(-50%) translateY(-100%);
+            transform: translateX(-50%) translateY(-100%);
   }
 }
 
-header nav .nav-left {
+header .nav .nav-left {
   font-family: "extrabold";
   display: -webkit-box;
   display: -ms-flexbox;
@@ -329,25 +338,104 @@ header nav .nav-left {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
   text-transform: uppercase;
+  width: 100%;
+  height: 100%;
 }
 
-@media screen and (min-width: 600px) {
-  header nav .nav-left {
+@media screen and (min-width: 576px) {
+  header .nav .nav-left {
+    width: 80%;
     font-size: 0.65rem;
   }
 }
 
 @media screen and (min-width: 900px) {
-  header nav .nav-left {
+  header .nav .nav-left {
     font-size: 0.8rem;
   }
 }
 
-header nav .nav-left a {
+header .nav .nav-left .navbar {
+  width: 100%;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  height: 100%;
+}
+
+header .nav .nav-left .navbar .container-fluid {
+  padding: 0 !important;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .nav .nav-left .navbar .container-fluid button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media screen and (min-width: 576px) {
+  header .nav .nav-left .navbar .container-fluid button {
+    display: none;
+  }
+}
+
+header .nav .nav-left .navbar .container-fluid button:hover {
+  background: lightgray;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+header .nav .nav-left .navbar .container-fluid button:visited {
+  background: lightgray;
+}
+
+header .nav .nav-left .navbar .container-fluid button span {
+  padding: 5px !important;
+}
+
+header .nav .nav-left .navbar .container-fluid button .navbar-toggler-icon {
+  border: none !important;
+  font-size: 0.75rem;
+}
+
+header .nav .nav-left .navbar .container-fluid button .navbar-toggler-icon:hover {
+  border: none !important;
+}
+
+header .nav .nav-left .navbar .container-fluid button .navbar-brand {
+  font-size: 0.75rem;
+}
+
+header .nav .nav-left .navbar .container-fluid button .navbar-brand:hover {
+  background: none;
+}
+
+@media screen and (min-width: 576px) {
+  header .nav .nav-left .navbar .container-fluid button .navbar-brand {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+header .nav .nav-left .navbar .container-fluid .show {
+  background: lightgray;
+  border-radius: 5px;
+}
+
+header .nav .nav-left .navbar .container-fluid a {
   height: 60px;
-  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -361,22 +449,20 @@ header nav .nav-left a {
   transition: 0.5s;
 }
 
-header nav .nav-left a:hover {
+header .nav .nav-left .navbar .container-fluid a:hover {
   background: lightgray;
-  color: #0051ff;
 }
 
-header nav .nav-left .actual {
-  background: white;
+@media screen and (min-width: 576px) {
+  header .nav .nav-left .navbar .container-fluid .actual {
+    background: white !important;
+    color: black !important;
+  }
 }
 
-header nav .nav-left .actual li {
-  color: black;
-  text-align: center;
-}
-
-header nav .nav-right {
-  padding: 18px;
+header .nav .nav-right {
+  margin: 0;
+  padding: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,11 +472,19 @@ header nav .nav-right {
   width: 20%;
 }
 
-header nav .nav-right img {
+@media screen and (max-width: 576px) {
+  header .nav .nav-right {
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+  }
+}
+
+header .nav .nav-right img {
   width: 20px;
 }
 
-header nav .nav-right img:hover {
+header .nav .nav-right img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -437,7 +531,7 @@ section .section-container .date::after {
   left: -100%;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   section .section-container .first-p {
     width: 50%;
   }
@@ -470,7 +564,7 @@ section .section-container .img {
   overflow: hidden;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   section .section-container .img {
     width: 85%;
   }
@@ -506,7 +600,7 @@ section .section-container .first-btn {
   margin-top: 25px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   section .section-flex {
     display: -ms-grid;
     display: grid;
@@ -519,7 +613,7 @@ section .left-section h3 {
   font-size: 1.584rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   section .left-section {
     border-right: 1px solid lightgray;
   }
@@ -532,7 +626,7 @@ footer {
   margin: 35px auto;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   footer {
     display: -ms-grid;
     display: grid;
@@ -546,7 +640,7 @@ footer .left-footer {
   border-bottom: 1px solid lightgray;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   footer .left-footer {
     border-right: 1px solid lightgray;
     padding: 45px;

@@ -33,7 +33,7 @@ section{
       }
     }
     .first-p{
-      @media screen and (min-width:600px) {
+      @media screen and (min-width:576px) {
         width: 50%;
       }
     }
@@ -60,7 +60,7 @@ section{
       width: 70%;
       margin:0 auto;
       overflow: hidden;
-      @media screen and (min-width:600px) {
+      @media screen and (min-width:576px) {
         width: 85%;
       }
       img{
@@ -89,7 +89,7 @@ section{
     }
   }
   .section-flex{
-    @media screen and (min-width:600px) {
+    @media screen and (min-width:576px) {
        @include grid (50%,50%);
     }
   }
@@ -97,7 +97,7 @@ section{
     h3{
       font-size: 1.584rem;
     }
-    @media screen and (min-width:600px) {
+    @media screen and (min-width:576px) {
       border-right: 1px solid lightgray;
     }
   }
