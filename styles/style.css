@@ -434,6 +434,12 @@ header .nav .nav-left .navbar .container-fluid .show {
   border-radius: 5px;
 }
 
+@media screen and (min-width: 576px) {
+  header .nav .nav-left .navbar .container-fluid .show {
+    background: rgba(190, 190, 190, 0);
+  }
+}
+
 header .nav .nav-left .navbar .container-fluid a {
   height: 60px;
   display: -webkit-box;

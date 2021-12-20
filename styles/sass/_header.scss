@@ -150,6 +150,9 @@ header {
           .show {
             background: lightgray;
             border-radius:5px ;
+            @media screen and (min-width:576px) {
+              background:rgba(190, 190, 190, 0)
+            }
           }
           a {
             height: 60px;
