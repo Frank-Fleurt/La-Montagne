@@ -49,6 +49,7 @@ footer{
     grid-template-columns: 100px 50%;
     h5{
       @include center;
+      font-size:0.9rem;
       text-transform:uppercase;
     }
     span{
